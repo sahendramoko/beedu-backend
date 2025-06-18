@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "api/*.js",
+            "src": "api/grok.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/api/(.*)",
-            "dest": "/api/$1"
+            "src": "/api/grok",
+            "dest": "api/grok.js"
         }
     ]
 }
